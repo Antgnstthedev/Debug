@@ -9,8 +9,8 @@ CORS(app)  # permite conexões do front-end (evita erro de CORS)
 
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
-SMTP_USER = 'barberclick83@gmail.com'
-SMTP_PASSWORD = 'Barberclick.00'  # cuidado para não deixar isso público!
+SMTP_USER = 'jotaprxdx19@gmail.com'
+SMTP_PASSWORD = 'tnog asiu tekm jdkg'  # cuidado para não deixar isso público!
 EMAIL_BARB = 'flawlexx00@gmail.com'
 
 @app.route('/')
