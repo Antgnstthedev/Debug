@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Contato - Barbearia Alura</title>
+        <title>Contato - Barbearia 01</title>
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
@@ -12,7 +12,7 @@
     <body>
         <header>
            <div class="caixa">
-            <h1><img src="imagens/logo01.png" alt="Logo da Barbearia Alura"></h1>
+            <h1><img src="imagens/logo01.png" alt="Logo da Barbearia 01"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -64,39 +64,39 @@
 
 
             <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-feira</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta-feira</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta-feira</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta-feira</td>
-                        <td>8h ~ 20h</td>
-                    </tr>
-                </tbody>
-            </table>
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Terça-feira</td>
+            <td>10h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Quarta-feira</td>
+            <td>10h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Quinta-feira</td>
+            <td>10h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Sexta-feira</td>
+            <td>9h ~ 20h</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>9h ~ 20h</td>
+        </tr>
+    </tbody>
+</table>
         </main>
 
         <footer> 
-            <img src="imagens/logo01.png" alt="Logo da Barbearia Alura">
+            <img src="imagens/logo01.png" alt="Logo da Barbearia 01">
             <p class="copyright">&copy; Barber Click - 2025</p>
         </footer>
     
@@ -110,7 +110,7 @@
                 const horario = document.querySelector("select").value;
         
                 // Envia os dados para o back-end
-                const resposta = await fetch("https://debug-1.onrender.com/agendar", {
+                const resposta = await fetch("http://localhost:5000/agendar", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -129,8 +129,19 @@
                     alert("Erro ao enviar agendamento. Tente novamente.");
                 }
             });
-        </script>
-        
 
+            
+        </script>
+        <footer>
+            
+    
+             <a href="https://www.instagram.com/01barbearia__?igsh=b3Znem5qOGExZjh6 " target="_blank">
+            <img src="imagens/iconeinstagram.png" alt="Instagram" style="width:50px; height:50px;">
+
+            <a href="https://wa.me/5511958376118" target="_blank">
+            <img src="imagens/iconewhats.png" alt="WhatsApp" style="width:50px; height:50px;">
+            </a>
+    </a>
+</footer>
     </body>
 </html>
