@@ -5,12 +5,12 @@ from email.mime.multipart import MIMEMultipart
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)  # permite conexões do front-end (evita erro de CORS)
+CORS(app)  # (evita erro de CORS)
 
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 SMTP_USER = 'barberclick83@gmail.com'
-SMTP_PASSWORD = 'egxe lhds yexm qepd'  # cuidado para não deixar isso público!
+SMTP_PASSWORD = 'egxe lhds yexm qepd'  
 EMAIL_BARB = 'flawlexx00@gmail.com'
 
 @app.route('/')
@@ -52,5 +52,5 @@ def agendar():
         return jsonify({"erro": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
 
