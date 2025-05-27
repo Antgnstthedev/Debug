@@ -9,8 +9,8 @@ CORS(app)  # (evita erro de CORS)
 
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
-SMTP_USER = 'jotaprxdx19@gmail.com'
-SMTP_PASSWORD = 'tnog asiu tekm jdkg'  
+SMTP_USER = 'Barberclick60@gmail.com'
+SMTP_PASSWORD = 'gcvr cshx gezk vums'  
 EMAIL_BARB = 'flawlexx00@gmail.com'
 
 @app.route('/')
